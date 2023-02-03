@@ -1,0 +1,80 @@
+@keyframes load{
+  0%{
+    opacity: 0.08;
+    filter:blur(5px);
+    letter-spacing: 3px;
+  }
+  100%{
+
+  }
+}
+
+.App{
+  font-family:'Montserrat';
+}
+
+.virus img{
+  width: 50px;
+  animation: virus 10s linear infinite;
+  opacity: 0;
+}
+
+.virus{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: -100px;
+  z-index: 9999;
+}
+
+@keyframes virus{
+  0%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50%{
+    opacity: .7;
+  }
+  70%{
+    opacity: .5;
+  }
+  100%{
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+.virus img:nth-child(1){
+  width: 25px;
+  transform: translateY(10vw);
+}
+.virus img:nth-child(2){
+  animation-delay:3s;
+}
+.virus img:nth-child(3){
+  animation-delay:1s;
+  width: 25px;
+  transform: translateY(10vw);
+}
+.virus img:nth-child(4){
+  animation-delay:4.5s;
+}
+.virus img:nth-child(5){
+  animation-delay:3s;
+}
+.virus img:nth-child(6){
+  animation-delay:10s;
+  width: 20px;
+}
+.virus img:nth-child(7){
+  animation-delay:7s;
+  width: 35px;
+}
+
+@media (max-width: 800px) {
+  .virus{
+    opacity: 0;
+  }
+}

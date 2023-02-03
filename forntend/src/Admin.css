@@ -1,0 +1,55 @@
+.feedbacks-container{
+    display:flex;
+}
+
+.feedbacks{
+    background: #c6e9192d;
+    padding: 15px;
+    margin: 10px;
+}
+
+.donations{
+    background: #46f06034;
+    padding: 15px;
+    margin: 10px;
+}
+
+.donar_btn{
+    box-shadow: 1.5px 1.5px 4.5px rgba(0, 0, 0, 0.74);
+}
+
+.feedback_btn{
+    box-shadow: 1.5px 1.5px 3.5px gray;
+}
+
+.log_out_btn{
+    text-decoration: none;
+    transition: .5s;
+}
+
+.log_out_btn:hover{
+    background: #ac0f0f;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sucess_img{
+    height: 9rem;
+    width: 17rem;
+    margin-top: 10vh;
+}
+
+.message{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #086408;
+}
+
+@media (max-width: 800px) {
+    .feedbacks-container{
+        display:flex;
+        flex-direction: column;
+    }
+  }

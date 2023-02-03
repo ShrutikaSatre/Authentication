@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+  }
+  
+  .app {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f6fa;
+  }
+  
+  .app_dropdown {
+    background-color: white;
+  }
+  
+  .app_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .app_header > h1 {
+    color: #fc3c3c;
+    font-size: 2rem;
+  }
+  
+  .app_stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .app_left {
+    flex: 0.9;
+  }
+  
+  .app_information > h3 {
+    color: #6a5d5d;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .app_right{
+    width: 25vw;
+  }
+
+  .infoBox_con, .infoBox_rec, .infoBox_act, .infoBox_deaths{
+      padding: 20px 10px 20px 10px;
+      box-shadow: 2px 2px 5px #585757;
+      border-radius: 10px;
+      cursor: pointer;
+      transition:linear 1s;
+    }
+
+  .infoBox_con:hover{
+    background-color: #eb19193b;
+    color: #ff0000;
+    box-shadow: 1px 1px 7px #000000;
+  }
+
+  .infoBox_rec:hover{
+    background-color: #7beb193f;
+    color: #008000;
+    box-shadow: 1px 1px 7px #000000;
+  }
+
+  .infoBox_act:hover{
+    background-color: #1a90ff2f;
+    color: #0f55eb;
+    box-shadow: 1px 1px 7px #000000;
+  }
+
+  .infoBox_deaths:hover{
+    background-color: #5857573b;
+    color: #585757;
+    box-shadow: 1px 1px 7px #000000;
+  }
+  
+  @media (max-width: 1320px) {
+    .app {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .app_right{
+      width: 96vw;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .app_right{
+      width: 96vw;
+    }
+  }
+
